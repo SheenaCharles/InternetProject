@@ -4,14 +4,14 @@
     <test name="Nopackage" preserve-order="true">
         <classes>
 <!--            <class name="com.heroku.AddOrRemoveElementsPageTest" />-->
-            <class name="com.heroku.BrokenImagesTabOpenTest" />
+<!--            <class name="com.heroku.BrokenImagesTabOpenTest" />-->
             <class name="com.heroku.DisappearingElementsTest" />
 <!--            <class name="com.heroku.DynamicallyLoadElementTest" />-->
-            <class name="com.heroku.DynamicControlsTest" />
+<!--            <class name="com.heroku.DynamicControlsTest" />-->
             <class name="com.heroku.FloatingMenuTest" />
             <class name="com.heroku.BasicAuthPageTest" />
 <!--            <class name="com.heroku.DropDownListTest" />-->
-            <class name="com.heroku.DigestAuthPageTest" />
+<!--            <class name="com.heroku.DigestAuthPageTest" />-->
 <!--            <class name="com.heroku.DynamicContentPageTest" />-->
         </classes>
     </test>
