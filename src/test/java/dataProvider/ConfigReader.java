@@ -9,7 +9,7 @@ public class ConfigReader {
     protected static Properties properties;
     public ConfigReader() {
         BufferedReader reader;
-        String propertyFilePath = "C:\\Users\\Anand Sambanthan\\Desktop\\Java Programming\\gitpractice\\internet\\src\\test\\java\\configs\\Configuration.properties";
+        String propertyFilePath = "C:\\Users\\Anand Sambanthan\\Desktop\\Java Programming\\gitpractice\\InternetProject\\src\\test\\java\\configs\\Configuration.properties";
         try {
             reader = new BufferedReader(new FileReader(propertyFilePath));
             properties = new Properties();
