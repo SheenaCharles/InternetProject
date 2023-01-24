@@ -41,7 +41,7 @@ public class CrossBrowserTest extends ConfigReader {
 
                 url = new URL("https://" + getSauceLabUserName() +":"+ getSauceLabAccessKey() + getSauceLabUrl());
                 driver = new RemoteWebDriver(url, caps);
-                driver.get("http://localhost:7080");
+                driver.get(getBaseUrl());
             } catch(MalformedURLException e){
                 throw new RuntimeException(e);
             }
@@ -59,7 +59,7 @@ public class CrossBrowserTest extends ConfigReader {
                 capabilities.setCapability("build", "Internet 1");
                 capabilities.setCapability("name", "Internet");
                 driver = new RemoteWebDriver(new URL("https://" + getLambdaTestUserName() + ":" + getLambdaTestAccessKey() + getLambdaURL()), capabilities);
-                driver.get("http://localhost:7080");
+                driver.get(getBaseUrl());
             } catch (MalformedURLException e) {
                 System.out.println("Invalid URL");
             } catch (Exception e) {
@@ -80,7 +80,7 @@ public class CrossBrowserTest extends ConfigReader {
             System.out.println("Browser is not supported");
             return;
         }
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
     }
     @AfterSuite
     public void afterSuite() {
