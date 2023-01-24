@@ -8,7 +8,7 @@ public class DynamicControlsTest extends CrossBrowserTest {
     protected DynamicControlsPage dynamicControlsPage;
     @BeforeClass
     public void isGalleryTabPresentTest () {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(13) > a")).click();
     }
     @Test (priority = 1)

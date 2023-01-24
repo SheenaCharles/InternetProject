@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class JavaScriptAlertsTest extends CrossBrowserTest {
     @Test (priority = 1)
     public void openJsAlert () {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(29) > a")).click();
     }
     @Test (priority = 2)

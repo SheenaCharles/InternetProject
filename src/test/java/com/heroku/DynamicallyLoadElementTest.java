@@ -16,9 +16,9 @@ public class DynamicallyLoadElementTest extends CrossBrowserTest {
 
     @AfterMethod
     public void navigateToLandingPage() {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlToBe("http://localhost:7080"));
+        wait.until(ExpectedConditions.urlToBe(getBaseUrl()));
     }
     @Test
     public void renderElementToWebPageTest() {

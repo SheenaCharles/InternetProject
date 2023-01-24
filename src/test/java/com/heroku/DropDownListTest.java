@@ -9,7 +9,7 @@ public class DropDownListTest extends CrossBrowserTest {
 
     @BeforeClass
     public void navigateToDropDownListPageTest() {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(11) > a")).click();
     }
     @AfterClass

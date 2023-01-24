@@ -11,7 +11,7 @@ public class DigestAuthPageTest extends CrossBrowserTest  {
 
     @BeforeTest
     public void goToHomePage()  {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(8) > a")).click();
     }
 

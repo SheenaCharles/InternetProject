@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class LandingPageTest extends CrossBrowserTest {
     @BeforeClass
     public void beforeClass() {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
     }
     @Test
     public void landingPageLoadTest() {

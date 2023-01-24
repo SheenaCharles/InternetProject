@@ -7,11 +7,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class DynamicContentPageTest extends BaseTest  {
+public class DynamicContentPageTest extends CrossBrowserTest {
 
     @BeforeTest
     public void setupTestForAuthentication()  {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(getBaseUrl());
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(12) > a")).click();
     }
 
