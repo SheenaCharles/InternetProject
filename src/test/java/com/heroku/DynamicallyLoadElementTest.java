@@ -16,9 +16,9 @@ public class DynamicallyLoadElementTest extends CrossBrowserTest {
 
     @AfterMethod
     public void navigateToLandingPage() {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("http://localhost:7080");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlToBe("https://the-internet.herokuapp.com/"));
+        wait.until(ExpectedConditions.urlToBe("http://localhost:7080"));
     }
     @Test
     public void renderElementToWebPageTest() {

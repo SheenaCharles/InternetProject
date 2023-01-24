@@ -14,7 +14,7 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("http://localhost:7080");
     }
 
     @AfterSuite

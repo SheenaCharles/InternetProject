@@ -11,7 +11,7 @@ public class BasicAuthPageTest extends CrossBrowserTest  {
 
     @BeforeTest
     public void setupTestForAuthentication() {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("http://localhost:7080");
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(3) > a")).click();
     }
 

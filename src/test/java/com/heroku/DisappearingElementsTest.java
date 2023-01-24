@@ -10,7 +10,7 @@ public class DisappearingElementsTest extends CrossBrowserTest {
 
     @BeforeClass
     public void beforeClass() {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("http://localhost:7080");
     }
     @Test
     public void isGalleryTabPresentTest (){
