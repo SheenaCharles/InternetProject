@@ -8,7 +8,7 @@ public class AddOrRemoveElementsPageTest extends CrossBrowserTest {
 
     @Test(priority = 1)
     public void openAddRemoveButtonsTest() {
-        driver.get("http://localhost:7080");
+        driver.get(getBaseUrl());
         driver.findElement(By.cssSelector("#content > ul > li:nth-child(2) > a")).click();
     }
 
