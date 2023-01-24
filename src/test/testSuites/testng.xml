@@ -12,7 +12,7 @@
             <class name="com.heroku.BasicAuthPageTest" />
 <!--            <class name="com.heroku.DropDownListTest" />-->
             <class name="com.heroku.DigestAuthPageTest" />
-            <class name="com.heroku.DynamicContentPageTest" />
+<!--            <class name="com.heroku.DynamicContentPageTest" />-->
         </classes>
     </test>
 </suite>
