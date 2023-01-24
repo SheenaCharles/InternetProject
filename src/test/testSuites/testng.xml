@@ -6,7 +6,6 @@
             <class name="com.heroku.AddOrRemoveElementsPageTest" />
             <class name="com.heroku.BrokenImagesTabOpenTest" />
             <class name="com.heroku.DisappearingElementsTest" />
-<!--            <class name="com.heroku.DynamicallyLoadElementTest" />-->
             <class name="com.heroku.DynamicControlsTest" />
             <class name="com.heroku.FloatingMenuTest" />
             <class name="com.heroku.BasicAuthPageTest" />
