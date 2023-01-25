@@ -17,7 +17,7 @@ public class DynamicContentPageTest extends CrossBrowserTest {
 
     @AfterTest
     public void tearDownForAuthentication()  {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(getBaseUrl());
     }
 
     @Test

@@ -16,13 +16,12 @@ public class CrossBrowserTest extends ConfigReader {
     protected static WebDriver driver;
 //    protected static String platform = System.getenv("platform");
 //    protected static String browser = System.getenv("browser");
-//    protected static String operatingSystem = System.getenv("os");
+//    protected static String operatingSystem = System.getenv("operatingSystem");
 //    protected static String  version = System.getenv("version");
     protected static String platform = System.getProperty("platform");
     protected static String browser = System.getProperty("browser");
-    protected static String operatingSystem = System.getProperty("os");
+    protected static String operatingSystem = System.getProperty("operatingSystem");
     protected static String  version = System.getProperty("version");
-
     protected URL url;
     @BeforeSuite
     public void browserSetup () {

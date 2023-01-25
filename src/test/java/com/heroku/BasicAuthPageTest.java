@@ -17,7 +17,7 @@ public class BasicAuthPageTest extends CrossBrowserTest  {
 
     @AfterTest
     public void tearDownForAuthentication() {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(getBaseUrl());
     }
 
     @Test(priority = 0)

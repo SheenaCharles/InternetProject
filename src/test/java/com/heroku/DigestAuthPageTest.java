@@ -17,7 +17,7 @@ public class DigestAuthPageTest extends CrossBrowserTest  {
 
     @AfterTest
     public void tearDownForAuthentication()  {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(getBaseUrl());
     }
 
     @Test

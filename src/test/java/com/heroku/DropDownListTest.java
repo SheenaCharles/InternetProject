@@ -14,7 +14,7 @@ public class DropDownListTest extends CrossBrowserTest {
     }
     @AfterClass
     public void afterTestAddRemoveButtons() {
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(getBaseUrl());
     }
     @Test
     public void selectOption1InDropDownListTest() {
