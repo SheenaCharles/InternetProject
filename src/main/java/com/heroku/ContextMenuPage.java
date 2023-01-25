@@ -22,4 +22,8 @@ public class ContextMenuPage extends BasePage {
         driver.switchTo().alert();
         return alert.getText();
     }
+
+    public void openContextMenu() {
+        driver.switchTo().alert().accept();
+    }
 }

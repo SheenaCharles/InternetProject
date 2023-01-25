@@ -17,5 +17,6 @@ public class ContextMenuPageTest extends CrossBrowserTest {
     public void rightClickOnBoxTest() {
         ContextMenuPage contextMenuPage = PageFactory.initElements(driver, ContextMenuPage.class);
         Assert.assertEquals(contextMenuPage.rightClickOnBox(), "You selected a context menu");
+        contextMenuPage.openContextMenu();
     }
 }
